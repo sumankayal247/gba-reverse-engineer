@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gba-re"
+version = "0.1.0"
+description = "GBA ROM inspection and reverse-engineering toolkit"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gba-re = "gba_re.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gba_re*"]
